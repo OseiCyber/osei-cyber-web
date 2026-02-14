@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Osei Cyber &amp; GRC</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo-link" href="#top" aria-label="Osei Cyber &amp; GRC">
+          <img src="logo.png" alt="Osei Cyber &amp; GRC Logo" class="site-logo">
+        </a>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          <a href="#services">Services</a>
+          <a href="#booking">Booking</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>Cyber-Security &amp; Compliance für Startups</h1>
+          <p class="hero-sub">Cloud Security, Audits und GRC – effizient, pragmatisch, sicher.</p>
+          <a class="btn btn-primary" href="#booking">Termin buchen</a>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <h2>Leistungen</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>General</h3>
+              <p>Erstberatung, Kontakt: hello@</p>
+            </article>
+            <article class="card">
+              <h3>Billing</h3>
+              <p>Transparente Angebote, Abrechnung und Kostenoptimierung.</p>
+            </article>
+            <article class="card">
+              <h3>Security</h3>
+              <p>Cloud-Security-Architektur, Hardening, DevSecOps und Threat Modeling.</p>
+            </article>
+            <article class="card">
+              <h3>Audit</h3>
+              <p>Vorbereitung und Begleitung von Audits (u. a. ISO, SOC).</p>
+            </article>
+            <article class="card">
+              <h3>Legal</h3>
+              <p>GRC, Policies, Datenschutz und Compliance-Frameworks.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="booking-section">
+        <div class="container">
+          <h2>Termin buchen</h2>
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cKZebdHFMogOfWNp-Dsu1VBhqN1nSjZkEuKh2VbrNRQaJImn3azAMwrmoct_6J6vqAHopQJax?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Osei Cyber &amp; GRC</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
