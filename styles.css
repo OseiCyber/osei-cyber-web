@@ -59,6 +59,7 @@ body.light-mode .site-header {
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--text);
+  margin-left: 8px;
 }
 .site-logo {
   max-height: 50px;
@@ -123,6 +124,23 @@ body.light-mode .theme-toggle {
 }
 body.light-mode .theme-toggle:hover {
   background: rgba(0,0,0,0.09);
+}
+.lang-toggle {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.08);
+}
+body.light-mode .lang-toggle:hover {
+  background: rgba(0,0,0,0.06);
+}
+.lang-toggle-option.is-active {
+  color: var(--blue);
 }
 
 .hero {
@@ -353,11 +371,13 @@ body.light-mode .modal-close:hover {
 
 @media (max-width: 640px) {
   .header-inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .site-nav {
-    width: 100%;
-    justify-content: flex-start;
+    margin-left: auto;
+    width: auto;
+    justify-content: flex-end;
+    gap: 12px;
   }
   .hero h1 {
     font-size: 2rem;

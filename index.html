@@ -17,10 +17,20 @@
         </a>
         <span class="brand-name">Osei Cyber &amp; GRC</span>
         <nav class="site-nav" aria-label="Hauptnavigation">
-          <a href="#services">Services</a>
-          <a href="#booking">Booking</a>
+          <a href="#services">
+            <span data-lang="de">Leistungen</span>
+            <span data-lang="en">Services</span>
+          </a>
+          <a href="#booking">
+            <span data-lang="de">Erstgespräch</span>
+            <span data-lang="en">Discovery Call</span>
+          </a>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" title="Theme wechseln"></button>
-          <a class="lang-toggle" href="#" aria-label="Sprachauswahl">DE | EN</a>
+          <a class="lang-toggle" href="#" id="lang-toggle" aria-label="Sprachauswahl">
+            <span class="lang-toggle-option" data-lang-option="de">DE</span>
+            <span aria-hidden="true"> | </span>
+            <span class="lang-toggle-option" data-lang-option="en">EN</span>
+          </a>
         </nav>
       </div>
     </header>
@@ -28,27 +38,57 @@
     <main id="top">
       <section class="hero">
         <div class="container hero-inner">
-          <h1>Cyber-Security &amp; Compliance für Startups</h1>
-          <p class="hero-sub">Cloud Security, Audits und GRC – effizient, pragmatisch, sicher.</p>
-          <a class="btn btn-primary" href="#booking">Termin buchen</a>
+          <h1>
+            <span data-lang="de">Cyber-Security &amp; Compliance für Startups</span>
+            <span data-lang="en">Cyber Security &amp; Compliance for Startups</span>
+          </h1>
+          <p class="hero-sub">
+            <span data-lang="de">Cloud Security, Audits und GRC – effizient, pragmatisch, sicher.</span>
+            <span data-lang="en">Cloud security, audits and GRC – efficient, pragmatic and secure.</span>
+          </p>
+          <a class="btn btn-primary" href="#booking">
+            <span data-lang="de">Kostenloses Erstgespräch buchen</span>
+            <span data-lang="en">Book a free discovery call</span>
+          </a>
         </div>
       </section>
 
       <section id="services" class="services">
         <div class="container">
-          <h2>Leistungen</h2>
+          <h2>
+            <span data-lang="de">Leistungen</span>
+            <span data-lang="en">Services</span>
+          </h2>
           <div class="cards">
             <article class="card">
-              <h3>Compliance Audit</h3>
-              <p>Ganzheitliche Analyse Ihrer Sicherheitsarchitektur und Compliance-Status.</p>
+              <h3>
+                <span data-lang="de">Compliance Audit</span>
+                <span data-lang="en">Compliance Audit</span>
+              </h3>
+              <p>
+                <span data-lang="de">Ganzheitliche Analyse Ihrer Sicherheitsarchitektur und Compliance-Status.</span>
+                <span data-lang="en">Comprehensive assessment of your security architecture and compliance posture.</span>
+              </p>
             </article>
             <article class="card">
-              <h3>Cloud Booster</h3>
-              <p>Express-Implementierung Ihrer Cloud-Infrastruktur &amp; Security-Basics in 30 Tagen – Ideal für Startups.</p>
+              <h3>
+                <span data-lang="de">Cloud Booster</span>
+                <span data-lang="en">Cloud Booster</span>
+              </h3>
+              <p>
+                <span data-lang="de">Express-Implementierung Ihrer Cloud-Infrastruktur &amp; Security-Basics in 30 Tagen – Ideal für Startups.</span>
+                <span data-lang="en">Express implementation of your cloud infrastructure and security basics in 30 days – ideal for startups.</span>
+              </p>
             </article>
             <article class="card">
-              <h3>vCISO</h3>
-              <p>Strategische Begleitung und externe Sicherheitsleitung auf Abruf.</p>
+              <h3>
+                <span data-lang="de">vCISO</span>
+                <span data-lang="en">vCISO</span>
+              </h3>
+              <p>
+                <span data-lang="de">Strategische Begleitung und externe Sicherheitsleitung auf Abruf.</span>
+                <span data-lang="en">Strategic guidance and fractional security leadership on demand.</span>
+              </p>
             </article>
           </div>
         </div>
@@ -56,7 +96,10 @@
 
       <section id="booking" class="booking-section">
         <div class="container">
-          <h2>Kostenloses Erstgespräch vereinbaren</h2>
+          <h2>
+            <span data-lang="de">Kostenloses Erstgespräch vereinbaren</span>
+            <span data-lang="en">Book a free discovery call</span>
+          </h2>
           <div class="calendar-card">
             <!-- Google Calendar Appointment Scheduling begin -->
             <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1cKZebdHFMogOfWNp-Dsu1VBhqN1nSjZkEuKh2VbrNRQaJImn3azAMwrmoct_6J6vqAHopQJax?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
@@ -70,8 +113,14 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Osei Cyber &amp; GRC</p>
         <nav class="legal-nav">
-          <a href="#impressum" id="link-impressum">Impressum</a>
-          <a href="#datenschutz" id="link-datenschutz">Datenschutz</a>
+          <a href="#impressum" id="link-impressum">
+            <span data-lang="de">Impressum</span>
+            <span data-lang="en">Imprint</span>
+          </a>
+          <a href="#datenschutz" id="link-datenschutz">
+            <span data-lang="de">Datenschutz</span>
+            <span data-lang="en">Privacy</span>
+          </a>
         </nav>
       </div>
     </footer>
@@ -80,12 +129,21 @@
       <div class="modal-backdrop" data-close="true"></div>
       <div class="modal-dialog">
         <div class="modal-header">
-          <h3 id="impressum-title">Impressum</h3>
+          <h3 id="impressum-title">
+            <span data-lang="de">Impressum</span>
+            <span data-lang="en">Imprint</span>
+          </h3>
           <button class="modal-close" aria-label="Schließen" data-close="true">×</button>
         </div>
         <div class="modal-content">
-          <p>Inhaber: Payaw Nyamekye Osei</p>
-          <p>Kontakt: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></p>
+          <p>
+            <span data-lang="de">Inhaber: Payaw Nyamekye Osei</span>
+            <span data-lang="en">Owner: Payaw Nyamekye Osei</span>
+          </p>
+          <p>
+            <span data-lang="de">Kontakt: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></span>
+            <span data-lang="en">Contact: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></span>
+          </p>
         </div>
       </div>
     </div>
@@ -94,12 +152,21 @@
       <div class="modal-backdrop" data-close="true"></div>
       <div class="modal-dialog">
         <div class="modal-header">
-          <h3 id="datenschutz-title">Datenschutz</h3>
+          <h3 id="datenschutz-title">
+            <span data-lang="de">Datenschutz</span>
+            <span data-lang="en">Privacy</span>
+          </h3>
           <button class="modal-close" aria-label="Schließen" data-close="true">×</button>
         </div>
         <div class="modal-content">
-          <p>Hinweis: Durch den eingebetteten Google-Kalender-Iframe können Daten erhoben werden.</p>
-          <p>Kontakt für Datenschutzfragen: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></p>
+          <p>
+            <span data-lang="de">Hinweis: Durch den eingebetteten Google-Kalender-Iframe können Daten erhoben werden.</span>
+            <span data-lang="en">Note: The embedded Google Calendar iframe may collect data.</span>
+          </p>
+          <p>
+            <span data-lang="de">Kontakt für Datenschutzfragen: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></span>
+            <span data-lang="en">Contact for privacy inquiries: <a href="mailto:hello@osei-cyber.com">hello@osei-cyber.com</a></span>
+          </p>
         </div>
       </div>
     </div>
@@ -111,6 +178,8 @@
       const linkImpressum = document.getElementById('link-impressum');
       const linkDatenschutz = document.getElementById('link-datenschutz');
       const themeToggle = document.getElementById('theme-toggle');
+      const langToggle = document.getElementById('lang-toggle');
+      const langToggleOptions = document.querySelectorAll('.lang-toggle-option');
 
       function openModal(modal) {
         modal.setAttribute('aria-hidden', 'false');
@@ -154,12 +223,46 @@
           themeToggle.setAttribute('aria-pressed', 'false');
         }
       }
+
+      function applyLanguage(lang) {
+        const activeLang = lang === 'en' ? 'en' : 'de';
+        document.documentElement.setAttribute('lang', activeLang);
+        document.querySelectorAll('[data-lang]').forEach((el) => {
+          const value = el.getAttribute('data-lang');
+          el.style.display = value === activeLang ? '' : 'none';
+        });
+        if (langToggle) {
+          langToggle.setAttribute('data-active', activeLang);
+        }
+        if (langToggleOptions) {
+          langToggleOptions.forEach((el) => {
+            const code = el.getAttribute('data-lang-option');
+            if (code === activeLang) {
+              el.classList.add('is-active');
+            } else {
+              el.classList.remove('is-active');
+            }
+          });
+        }
+        localStorage.setItem('lang', activeLang);
+      }
+
       const savedTheme = localStorage.getItem('theme');
       applyTheme(savedTheme === 'light' ? 'light' : 'dark');
       themeToggle.addEventListener('click', () => {
         const isLight = document.body.classList.contains('light-mode');
         applyTheme(isLight ? 'dark' : 'light');
       });
+
+      const savedLang = localStorage.getItem('lang');
+      applyLanguage(savedLang === 'en' ? 'en' : 'de');
+      if (langToggle) {
+        langToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          const current = langToggle.getAttribute('data-active') === 'en' ? 'en' : 'de';
+          applyLanguage(current === 'de' ? 'en' : 'de');
+        });
+      }
     </script>
   </body>
 </html>
