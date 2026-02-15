@@ -55,6 +55,11 @@ body.light-mode .site-header {
   gap: 24px;
   padding: 14px 0;
 }
+.brand-name {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
 .site-logo {
   max-height: 50px;
   display: block;
@@ -81,6 +86,20 @@ body.light-mode .site-logo {
   transform: translateY(-1px);
 }
 body.light-mode .site-nav a:hover {
+  background: rgba(0,0,0,0.06);
+}
+.lang-toggle {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.08);
+}
+body.light-mode .lang-toggle:hover {
   background: rgba(0,0,0,0.06);
 }
 .theme-toggle {
@@ -212,6 +231,19 @@ body.light-mode .card {
   border-radius: 10px;
   background: transparent;
   box-shadow: none;
+}
+@media (max-width: 768px) {
+  .calendar-card {
+    padding: 10px;
+  }
+  .booking-section .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .booking-section iframe {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .site-footer {
